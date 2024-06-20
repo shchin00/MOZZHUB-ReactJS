@@ -223,7 +223,7 @@ const TestFunc = () => {
     const hotspots = [
         { id: 1, center: [1.3521, 103.8198], radius: 400 },
         { id: 2, center: [1.3621, 103.8298], radius: 400 },
-        { id: 3, center: [1.3721, 103.8398], radius: 400 }
+        // { id: 3, center: [1.3721, 103.8398], radius: 400 }
     ];
 
     // Function to handle hotspot click
