@@ -213,10 +213,10 @@ const TestFunc = () => {
     // Updated patient data structure with one patient location inside a cluster and their visits outside the cluster
     const patientData = [
         { id: 1, position: [1.3521, 103.8198], visits: [[1.3621, 103.8198], [1.3721, 103.8198]] },
-        { id: 2, position: [1.3621, 103.8298], visits: [[1.3521, 103.8198], [1.3821, 103.8198]] },
-        { id: 3, position: [1.3521, 103.8198], visits: [[1.3421, 103.8098], [1.3321, 103.7998]] }, // Patient within the cluster
-        { id: 4, position: [1.3821, 103.8498], visits: [[1.3721, 103.8398], [1.3621, 103.8298]] },
-        { id: 5, position: [1.3921, 103.8598], visits: [[1.3821, 103.8498], [1.3721, 103.8398]] }
+        // { id: 2, position: [1.3621, 103.8298], visits: [[1.3521, 103.8198], [1.3821, 103.8198]] },
+        // { id: 3, position: [1.3521, 103.8198], visits: [[1.3421, 103.8098], [1.3321, 103.7998]] }, // Patient within the cluster
+        // { id: 4, position: [1.3821, 103.8498], visits: [[1.3721, 103.8398], [1.3621, 103.8298]] },
+        // { id: 5, position: [1.3921, 103.8598], visits: [[1.3821, 103.8498], [1.3721, 103.8398]] }
     ];
 
     // Hotspot data with center coordinates and radius
@@ -260,14 +260,14 @@ const TestFunc = () => {
                         key={`visit-${patient.id}-${index}`}
                         center={visit}
                         radius={5}
-                        color="#0000FF"
-                        fillColor="#0000FF"
+                        color="blue"
+                        fillColor="blue"
                         fillOpacity={1}
                     />
                 ))
             )}
 
-            {/* Display all polylines between patient locations and their visited locations */}
+            {/* Display polylines between each patient's location and their visited locations */}
             {patientData.map(patient => (
                 patient.visits.map((visit, index) => (
                     <Polyline key={`line-${patient.id}-${index}`} positions={[patient.position, visit]} color='black' />
