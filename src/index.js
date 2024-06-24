@@ -16,8 +16,8 @@ import EditMobilityForm from './component/EditMobilityForm';
 import CaseRecord from './component/CaseRecord';
 import MovementMap from './component/MovementMap';
 import UserProfile from './component/UserProfile';
-import interactiveMap from './component/interactiveMap';
-import TestFunc from './component/test';
+import InteractiveMap from './component/interactiveMap';
+import LvlThreeInteractiveMap from './component/lvlThreeInteractiveMap';
 
 ReactDOM.render((
     <Provider store={store}>
@@ -33,8 +33,8 @@ ReactDOM.render((
                 <Route path={'/map'} component={MovementMap} />
                 <Route path={'/logout'} component={LoginForm} />
                 <Route path={'/userprofile'} component={UserProfile}/>
-                <Route path={'/interactivemap'} component={interactiveMap} />
-                <Route path={'/test'} component={TestFunc} />
+                <Route path={'/interactivemap'} component={InteractiveMap} />
+                <Route path={'/lvlThreeInteractiveMap'} component={LvlThreeInteractiveMap} />
             </div>
         </ConnectedRouter >
     </Provider>), document.getElementById('root'));

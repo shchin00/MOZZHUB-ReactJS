@@ -174,7 +174,7 @@ const InteractiveMap = (props) => {
                     />
                     {data.map((elem, i) => {
                         const isResidentialLocation = i === 0;
-                        const circleColor = isResidentialLocation ? '#FFA500' : 'red';
+                        const circleColor = isResidentialLocation ? '#FFA500' : 'blue';
                         return (
                             <Circle
                                 key={i}
@@ -213,9 +213,9 @@ const InteractiveMap = (props) => {
                     })}
                 </Map>
                 <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '0px' }}>
-                    <div style={{ margin: "2px", border: "2px solid black" }}>
+                    <div style={{ margin: "2px", border: "2px solid black", height: '50px'}}>
                         <p style={{ margin: "2px" }}>Case ID:{case_id}</p>
-                        <p style={{ margin: "2px" }}>Location: </p>
+                        {/* <p style={{ margin: "2px" }}>Location: </p> */}
                     </div>
                     <div style={{ position: "absolute", right: "10px" }}>
                         <Button style={{ marginTop: "10px" }} onClick={handleCloseButton}>Close</Button>
