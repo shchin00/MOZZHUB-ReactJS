@@ -47,30 +47,30 @@ const LvlThreeInteractiveMap = ({lat1,lng1,ranking=[], height}) => {
 
     // Patient data with unique locations for each patient's position and visits
     const patientData = [
-        { id: 1, position: [1.3521, 103.8198], visits: [[1.3601, 103.8198], [1.3701, 103.8198]] },
+        { id: 1, position: [1.46492, 110.427], visits: [[1.46553, 110.433], [40.4429, -79.885], [3.21622, 101.729], [1.46843, 110.428], [ 1.46816, 110.429], [47.882, 106.852], [1.46149, 110.451]] },
         { id: 2, position: [1.3621, 103.8298], visits: [[1.3521, 103.8298], [1.3821, 103.8298]] },
         { id: 3, position: [1.3721, 103.8398], visits: [[1.3621, 103.8398], [1.3521, 103.8398]] },
         { id: 4, position: [1.3821, 103.8498], visits: [[1.3721, 103.8498], [1.3621, 103.8498]] },
         { id: 5, position: [1.3921, 103.8598], visits: [[1.3821, 103.8598], [1.3721, 103.8598]] },
         { id: 6, position: [1.361388, 103.830701], visits: [[1.3721, 103.8498], [1.3621, 103.8498]]},
         {id: 7, position: [1.466374, 110.426093], visits: [[1.458614, 110.423143], [1.455406, 110.427726]]},
-        {id: 8, position: [1.466258, 110.429779], visits: [[1.460552, 110.419952], [1.460595, 110.450893]]},
-        {id: 9, position: [1.465743, 110.413600], visits: [[1.454375, 110.408794], [1.455276, 110.413686]]},
-        {id: 10, position: [1.472951, 110.419780], visits: [[1.468360, 110.427848], [1.480544, 110.414973]]},
-        {id: 11, position: [1.452573, 110.431195], visits: [[1.455361, 110.445229], [1.454632, 110.459348]]},
-        {id: 12, position: [1.467717, 110.435701], visits: [[1.468189, 110.443641], [1.461368, 110.436002]]},
-        {id: 13, position: [1.472222, 110.429693], visits: [[1.479697, 110.425349], [1.472265, 110.415786], [1.513441, 110.388858]]}
+        // {id: 8, position: [1.466258, 110.429779], visits: [[1.460552, 110.419952], [1.460595, 110.450893]]},
+        // {id: 9, position: [1.465743, 110.413600], visits: [[1.454375, 110.408794], [1.455276, 110.413686]]},
+        // {id: 10, position: [1.472951, 110.419780], visits: [[1.468360, 110.427848], [1.480544, 110.414973]]},
+        // {id: 11, position: [1.452573, 110.431195], visits: [[1.455361, 110.445229], [1.454632, 110.459348]]},
+        // {id: 12, position: [1.467717, 110.435701], visits: [[1.468189, 110.443641], [1.461368, 110.436002]]},
+        // {id: 13, position: [1.472222, 110.429693], visits: [[1.479697, 110.425349], [1.472265, 110.415786], [1.513441, 110.388858]]}
     ];
 
     // Hotspot data with center coordinates, radius, and ranking
     const hotspots = [
-        { id: 1, center: [1.3521, 103.8198], radius: 400, ranking: 0.2 },
-        { id: 2, center: [1.3621, 103.8298], radius: 400, ranking: 0.5 },
-        { id: 3, center: [1.3721, 103.8398], radius: 400, ranking: 0.8 },
-        {id: 4, center: [1.472013, 110.431159], radius: 400, ranking: 0.5},
-        {id: 5, center: [1.472629, 110.420660], radius: 400, ranking: 0.3},
-        {id: 6, center: [1.466315, 110.428255], radius: 400, ranking: 0.8},
-        {id: 7, center: [1.453455, 110.431043], radius: 400, ranking: 0.1}
+        { id: 1, center: [1.46553, 110.433], radius: 400, ranking: 0.2 },
+        { id: 2, center: [1.46843, 110.428], radius: 400, ranking: 0.5 },
+        { id: 3, center: [1.46149, 110.451], radius: 400, ranking: 0.8 },
+        {id: 4, center: [1.46492, 110.427], radius: 400, ranking: 0.5},
+        {id: 5, center: [1.45292, 110.457], radius: 400, ranking: 0.3},
+        // {id: 6, center: [1.466315, 110.428255], radius: 400, ranking: 0.8},
+        // {id: 7, center: [1.453455, 110.431043], radius: 400, ranking: 0.1}
     ];
 
     // Function to handle hotspot click
@@ -95,8 +95,8 @@ const LvlThreeInteractiveMap = ({lat1,lng1,ranking=[], height}) => {
     console.log(ranking)
 
     return (
-      <div>
-      <MenuBar style={{margin: '0px 0px 0px'}}/>
+    <div>
+    <MenuBar style={{margin: '0px 0px 0px'}}/>
         <Map center={[lat, lng]} zoom={13} style={{ width: '100%', height: '630px', margin: 'auto' }}>
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
