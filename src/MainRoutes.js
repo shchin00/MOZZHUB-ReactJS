@@ -9,7 +9,7 @@ import CaseRecord from './component/CaseRecord';
 import MovementMap from './component/MovementMap';
 import UserProfile from './component/UserProfile';
 import interactiveMap from './component/interactiveMap';
-import TestFunc from './component/test';
+import LvlThreeInteractiveMap from './component/lvlThreeInteractiveMap';
 
 
 function MainRoutes() {
@@ -33,7 +33,7 @@ function MainRoutes() {
                 <Route path={`${process.env.PUBLIC_URL}/map`} component={MovementMap} />
                 <Route path={`${process.env.PUBLIC_URL}/userprofile`} component={UserProfile}/>
                 <Route path={`${process.env.PUBLIC_URL}/interactivemap`} component={interactiveMap} />
-                <Route path={`${process.env.PUBLIC_URL}/test`} component={TestFunc} />
+                <Route path={`${process.env.PUBLIC_URL}/lvlThreeInteractivemap`} component={LvlThreeInteractiveMap} />
             </div>
         </BrowserRouter>
     )

@@ -157,10 +157,8 @@ class CaseRecord extends React.Component{
 
     interactiveMap(){
         if(this.state.mob_status==true){
-            //let case_id = this.state.cData.case_no
-            //let case_id = 'T1369'
-            let case_id = '1113'
-            console.log(case_id, "BBBBBBBBBB")
+           // let case_id = this.state.cData.case_no
+            let case_id = 'T1578'
             return(
                 <Button color='blue' inverted onClick={() => this.props.history.push('/interactiveMap',{case_id})}>
                     <Icon name="map"/> Interactive Map

@@ -25,6 +25,10 @@ const MenuBar = props => (
             <Icon name='table' />
                 Case Record
         </Menu.Item>
+        <Menu.Item href='lvlThreeInteractiveMap' name='interactive map' fitted='vertically' active={props.activeItem === 'map'}>
+            <Icon name='map' />
+                Level 3 Interactive Map
+        </Menu.Item>
         <Menu.Item position='right'>
             <Icon name='user' />
             <Dropdown style={{overflow: false}} floating direction='left' text= {name||props.name}>

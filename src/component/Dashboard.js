@@ -1,6 +1,7 @@
 import React from 'react'
 import MenuBar from './MenuBar'
 import Heatmap from './Heatmap'
+import TestFunc from './test'
 import BarChart from './BarChart'
 import Footer from './Footer'
 import { push } from 'react-router-redux'
@@ -165,6 +166,7 @@ class Dashboard extends React.Component{
                                     />
                                     } */}
                                     <Heatmap lat = {lat} lng={lng} ranking={this.state.ranking2} height='620px'/>
+                                    {/* <TestFunc lat = {lat} lng={lng} ranking={this.state.ranking2} height='690px'/> */}
                             </Grid.Row>
                             <Divider hidden/>
                             <Grid.Row>
